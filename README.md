@@ -9,9 +9,10 @@
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  下载后更改自己本地的Maven配置
+2.  更改配置里MySQL的账号密码
+3.  在本地数据库创建对应的表
+4.  运行Application后访问localhost:8080即可
 
 #### 参与贡献
 
