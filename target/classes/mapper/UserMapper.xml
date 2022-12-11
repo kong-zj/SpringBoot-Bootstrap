@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.edu.usts.cs2020.main_system.dao.UserDao">
+
+    <!--验证用户账号密码-->
+    <select id="getInfo" parameterType="String" resultType="cn.edu.usts.cs2020.main_system.entity.User">
+        SELECT * FROM user WHERE u_name = #{u_name} AND u_password = #{u_password}
+    </select>
+
+    <!--用户注册-->
+    <insert id="insertUser" parameterType="cn.edu.usts.cs2020.main_system.entity.User">
+        insert into user(u_name, u_password, u_email) VALUES(#{u_name},#{u_password},#{u_email})
+    </insert>
+
+    <!--创建活动-->
+    <insert id="createAct" parameterType="cn.edu.usts.cs2020.main_system.entity.Activity" >
+        insert into activity(act_name,  act_time, act_location, actbasicmoney,creater)
+        values(#{act_name},#{act_time},#{act_location},#{actbasicmoney},#{creater})
+    </insert>
+
+    <!--查询活动信息-->
+    <select id="getAllAct" parameterType="String" resultType="cn.edu.usts.cs2020.main_system.entity.Activity">
+        select * from activity
+    </select>
+
+    <!--报名活动-->
+    <insert id="signUp" parameterType="cn.edu.usts.cs2020.main_system.entity.Confirm">
+        insert into confirm(u_name, u_email, act_name, act_time, act_location,actbasicmoney)
+        values(#{u_name},#{u_email},#{act_name},#{act_time},#{act_location},#{actbasicmoney})
+    </insert>
+
+    <!--查询我创建的活动-->
+    <select id="myAct" parameterType="String" resultType="cn.edu.usts.cs2020.main_system.entity.Activity" >
+        select act_name,act_time,act_location,actbasicmoney from activity
+        where creater = #{creater}
+    </select>
+
+    <!--查询我加入的活动-->
+    <select id="joined" parameterType="String" resultType="cn.edu.usts.cs2020.main_system.entity.Confirm">
+        select act_name,act_time,act_location,actbasicmoney from confirm
+        where u_name=#{u_name}
+    </select>
+
+    <!--查询费用-->
+    <select id="money" parameterType="String" resultType="cn.edu.usts.cs2020.main_system.entity.Confirm">
+        select act_name,actbasicmoney,act1,money1 from confirm
+        where u_name = #{u_name}
+    </select>
+
+    <!--追加项目-->
+    <update id="addAct" parameterType="cn.edu.usts.cs2020.main_system.entity.Confirm">
+        update confirm set act1=#{act1},money1=#{money1} where act_name=#{act_name} and u_name=#{u_name}
+    </update>
+
+    <!--生成报告-->
+    <select id="toExcel" parameterType="String" resultType="cn.edu.usts.cs2020.main_system.entity.Confirm">
+        select act_name,act_time,act_location,actbasicmoney,act1,money1 from confirm
+        where u_name=#{u_name}
+    </select>
+</mapper>

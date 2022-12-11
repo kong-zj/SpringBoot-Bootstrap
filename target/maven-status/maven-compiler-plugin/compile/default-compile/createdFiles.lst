@@ -1,0 +1,8 @@
+cn/edu/usts/cs2020/main_system/controller/UserController.class
+cn/edu/usts/cs2020/main_system/dao/UserDao.class
+cn/edu/usts/cs2020/main_system/service/UserService.class
+cn/edu/usts/cs2020/main_system/entity/Activity.class
+cn/edu/usts/cs2020/main_system/serviceimpl/UserServiceImpl.class
+cn/edu/usts/cs2020/main_system/entity/Confirm.class
+cn/edu/usts/cs2020/main_system/MysystemApplication.class
+cn/edu/usts/cs2020/main_system/entity/User.class

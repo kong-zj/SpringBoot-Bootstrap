@@ -1,0 +1,8 @@
+/home/kzj/project/springboot_study/mysystem-master/mysystem-master/src/main/java/cn/edu/usts/cs2020/main_system/entity/User.java
+/home/kzj/project/springboot_study/mysystem-master/mysystem-master/src/main/java/cn/edu/usts/cs2020/main_system/controller/UserController.java
+/home/kzj/project/springboot_study/mysystem-master/mysystem-master/src/main/java/cn/edu/usts/cs2020/main_system/serviceimpl/UserServiceImpl.java
+/home/kzj/project/springboot_study/mysystem-master/mysystem-master/src/main/java/cn/edu/usts/cs2020/main_system/entity/Confirm.java
+/home/kzj/project/springboot_study/mysystem-master/mysystem-master/src/main/java/cn/edu/usts/cs2020/main_system/dao/UserDao.java
+/home/kzj/project/springboot_study/mysystem-master/mysystem-master/src/main/java/cn/edu/usts/cs2020/main_system/service/UserService.java
+/home/kzj/project/springboot_study/mysystem-master/mysystem-master/src/main/java/cn/edu/usts/cs2020/main_system/entity/Activity.java
+/home/kzj/project/springboot_study/mysystem-master/mysystem-master/src/main/java/cn/edu/usts/cs2020/main_system/MysystemApplication.java

@@ -1,0 +1,35 @@
+body#page1{background-image: linear-gradient(to top, #8d90ad 0%,  #e2e3ea 50%, #f9f9fb 100%);}
+body#page2{background-image: linear-gradient(to top, #FBF6F3 0%, #36D6E7 100%);}
+body#page3{background-image: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);}
+body#page4{background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);}
+body#page5{background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);}
+.container{
+            width: 700px;
+            height: 400px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin:  auto;
+            padding: 20px;
+            z-index: 130;
+            border-radius: 8px;
+	background-image: linear-gradient(to right, #faf7f5, #e2d2c4);
+            box-shadow:  0 3px 18px pink;
+            font-size: 16px;
+ }
+ .inner{
+      width: 500px;
+      height:380px;
+     background-color:transparent;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -190px; /*height的一半*/
+      margin-left: -250px; /*width的一半*/
+ }
+#mydiv
+p{text-align:center;
+}
+.divcss5{ background:#2F4F4F; color:#FFF} 

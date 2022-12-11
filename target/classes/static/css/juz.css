@@ -1,0 +1,16 @@
+.container{
+      width: 500px;
+      height:400px;
+      border: 2px solid #379;
+      position: relative;
+ }
+ .inner{
+      width: 480px;
+      height:380px;
+      background-color: transparent;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -190px; /*height的一半*/
+      margin-left: -240px; /*width的一半*/
+ }
